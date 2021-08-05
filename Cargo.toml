@@ -13,11 +13,10 @@ crate-type = ["lib"]
 serde_derive = "1.0"
 serde = "1.0"
 rayon = "1.0.3"
-curv = { package = "curv-kzen", version = "0.7", default-features = false }
-
+curv = { git = "https://github.com/rjman-ljm/curv", branch = "musig2", default-features=false }
 [dependencies.bulletproof]
-git = "https://github.com/KZen-networks/bulletproofs"
-tag = "v1.1.6"
+git = "https://github.com/rjman-ljm/bulletproofs"
+branch = "musig2"
 default-features = false
 
 [dev-dependencies]
